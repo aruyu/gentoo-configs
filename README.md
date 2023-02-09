@@ -1,3 +1,1 @@
-## Pull_shark
-
-COOL!!!
+## gentoo config files
