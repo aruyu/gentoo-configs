@@ -1,0 +1,22 @@
+# Native CLANG LTO environments.
+LDFLAGS="-fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind ${LDFLAGS}"
+CLANG_LTO_FLAGS="${CLANG_LTO} ${COMMON_FLAGS}"
+
+CFLAGS="${CLANG_LTO_FLAGS}"
+CXXFLAGS="${CLANG_LTO_FLAGS}"
+FCFLAGS="${CLANG_LTO_FLAGS}"
+FFLAGS="${CLANG_LTO_FLAGS}"
+
+CC="clang"
+CXX="clang++"
+LD="ld.lld"
+AR="llvm-ar"
+AS="llvm-as"
+NM="llvm-nm"
+STRIP="llvm-strip"
+RANLIB="llvm-ranlib"
+OBJCOPY="llvm-objcopy"
+STRINGS="llvm-strings"
+OBJDUMP="llvm-objdump"
+READELF="llvm-readelf"
+ADDR2LINE="llvm-addr2line"

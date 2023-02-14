@@ -1,1 +1,1 @@
-## gentoo config files
+## Gentoo Configs
