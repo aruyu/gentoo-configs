@@ -1,6 +1,6 @@
 # Native CLANG LTO environments.
 LDFLAGS="-fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind ${LDFLAGS}"
-CLANG_LTO_FLAGS="${CLANG_LTO} ${COMMON_FLAGS}"
+CLANG_LTO_FLAGS="${THIN_LTO} ${COMMON_FLAGS}"
 
 CFLAGS="${CLANG_LTO_FLAGS}"
 CXXFLAGS="${CLANG_LTO_FLAGS}"
