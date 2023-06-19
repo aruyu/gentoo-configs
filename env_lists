@@ -7,3 +7,4 @@ ibus-daemon -drx
 # cd /opt/hnc/hoffice11/Bin/ && sudo mv qt qt.bak
 
 # gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+# rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist
