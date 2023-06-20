@@ -3,6 +3,12 @@ export QT_IM_MODULE="ibus"
 #export XMODIFIERS="@im=ibus"
 ibus-daemon -drx
 
+GTK_IM_MODULE=kime
+QT_IM_MODULE=kime
+#XMODIFIERS=@im=kime
+
+kime
+
 # gsettings set org.freedesktop.ibus.engine.hangul use-event-forwarding false
 # cd /opt/hnc/hoffice11/Bin/ && sudo mv qt qt.bak
 
