@@ -2,6 +2,8 @@
 
 sudo iptables -A INPUT -p tcp --dport 22 -j DROP
 sudo iptables -A INPUT -p tcp --dport 22 -j REJECT --reject-with tcp-reset
+sudo iptables -A INPUT -p tcp --dport 3389 -j DROP
+sudo iptables -A INPUT -p tcp --dport 3389 -j REJECT --reject-with tcp-reset
 sudo iptables -A INPUT -s 10.0.0.0/8 -j DROP
 
 sudo su <<-EOF
