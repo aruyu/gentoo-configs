@@ -14,3 +14,6 @@ kime
 
 # gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 # rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist
+
+# sed -i 's/# DisableOnPalm = false/DisableOnPalm = true/' /etc/iptsd.conf
+# sed -i 's/# DisableOnStylus = false/DisableOnStylus = true/' /etc/iptsd.conf
